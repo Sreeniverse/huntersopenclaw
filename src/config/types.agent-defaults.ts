@@ -239,6 +239,10 @@ export type AgentDefaultsConfig = {
   repoRoot?: string;
   /** Optional full system prompt replacement. Primarily for prompt debugging and controlled experiments. */
   systemPromptOverride?: string;
+  /** Optional system prompt text appended for all agents (Karpathy discipline framework, tool rules, etc.). */
+  systemPrompt?: string;
+  /** Optional standing rules array rendered after systemPrompt in agent turns. */
+  rules?: string[];
   /** Provider-independent prompt overlays applied by model family. */
   promptOverlays?: PromptOverlaysConfig;
   /** Skip bootstrap (BOOTSTRAP.md creation, etc.) for pre-configured deployments. */

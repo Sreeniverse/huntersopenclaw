@@ -66,7 +66,7 @@ function assignGatewayClient(
 
 function hasGatewaySocketStarted(plugin: discordGateway.GatewayPlugin): boolean {
   const state = plugin as unknown as DiscordGatewayRegistrationState;
-  return state.ws != null || state.isConnecting === true;
+  return state.ws != null;
 }
 
 type ResolveDiscordGatewayIntentsParams = {

@@ -83,6 +83,10 @@ export type AgentConfig = {
   agentDir?: string;
   /** Optional per-agent full system prompt replacement. */
   systemPromptOverride?: AgentDefaultsConfig["systemPromptOverride"];
+  /** Optional per-agent system prompt (replaces defaults.systemPrompt when set). */
+  systemPrompt?: string;
+  /** Optional per-agent standing rules (replaces defaults.rules when set). */
+  rules?: string[];
   /** Optional per-agent agent runtime policy override. */
   agentRuntime?: AgentRuntimePolicyConfig;
   /** @deprecated Use agentRuntime. */
