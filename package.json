@@ -1,6 +1,6 @@
 {
   "name": "openclaw",
-  "version": "2026.5.16",
+  "version": "2026.5.16-sreeni.1",
   "description": "Multi-channel AI gateway with extensible messaging integrations",
   "keywords": [],
   "homepage": "https://github.com/openclaw/openclaw#readme",
@@ -1527,6 +1527,9 @@
     "plugins:inventory:gen": "node scripts/generate-plugin-inventory-doc.mjs --write",
     "plugins:sync": "node --import tsx scripts/sync-plugin-versions.ts",
     "plugins:sync:check": "node --import tsx scripts/sync-plugin-versions.ts --check",
+    "fork:version": "node scripts/fork-version.mjs",
+    "fork:version:bump": "node scripts/fork-version.mjs --bump",
+    "fork:version:release": "node scripts/fork-version.mjs --release",
     "postinstall": "node scripts/postinstall-bundled-plugins.mjs",
     "preinstall": "node scripts/preinstall-package-manager-warning.mjs",
     "prepack": "node --import tsx scripts/openclaw-prepack.ts",
